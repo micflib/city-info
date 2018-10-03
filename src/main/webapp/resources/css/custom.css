@@ -1,0 +1,36 @@
+body {
+	font-family: Cabin;
+	background: #fcfcfc;
+	/* background-image: url("../img/berlin2.png"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-color:#e8e8e8; */
+}
+
+body>.grid {
+	height: 100%;
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url("../font/Cabin-Regular.ttf");
+}
+
+use {
+    fill: #00b38b;
+}
+
+.city-country {
+	font-size: 28px;
+    color: #878787;
+}
+
+.deg {
+	font-size: 33px;
+    color: #00b38b;
+}
+
+.currency {
+	font-size: 24px;
+    color: #878787;
+}
