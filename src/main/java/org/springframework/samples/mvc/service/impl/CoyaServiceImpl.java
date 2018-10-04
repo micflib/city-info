@@ -42,8 +42,8 @@ public class CoyaServiceImpl implements CoyaService {
 		String warr = weather.toString().substring(1, weather.toString().length()-1);
 		JSONObject wJson = new JSONObject(warr);
 		Object main = resultJSON.get("main");
-		JSONObject mJson = new JSONObject(main);
-		hmap.put("weather",  wJson.get("description").toString());
+		JSONObject mJson = new JSONObject(main.toString());
+		hmap.put("weather",  wJson.get("icon").toString());
 		hmap.put("temp", concertKelvinToCelsius(mJson.get("temp").toString()));
 		return hmap;
 	}
@@ -51,7 +51,6 @@ public class CoyaServiceImpl implements CoyaService {
     private String sendGet(String url) throws Exception {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        System.out.println("Response code: "+con.getResponseCode());
         if(con.getResponseCode() != HttpServletResponse.SC_OK) {
         	throw new Exception();
         }
@@ -65,11 +64,11 @@ public class CoyaServiceImpl implements CoyaService {
 		return response.toString();
     }
     
-    public String concertKelvinToCelsius(String kelvinValue) {
+    private String concertKelvinToCelsius(String kelvinValue) {
     	float kelvin = Float.parseFloat(kelvinValue);
-		float celsius = kelvin - 273.15F;
+    	int degree = (int) Math.round( kelvin - 273.15F); //convert temp to celsius 
 		StringBuilder strb = new StringBuilder();
-		strb.append(celsius);
+		strb.append(degree);
 		return strb.toString();
     }
 }

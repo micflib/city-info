@@ -11,29 +11,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/lib/semantic/semantic.min.css">
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/custom.css">
-
 </head>
 <body>
 	<%@include file="svg.jsp"%>
-	<div id="wSession" data-wSession="${cityName}"></div>
+	<div id="wSession" data-wSession="${weather}"></div>
 	<div class="ui four column centered grid">
 	  <div class="row">
-	    <div class="column"></div>
-	    <div class="column"></div>
-	  </div>
-	  <div class="row">
-	    <div class="middle aligned  right aligned column">
+	    <div class="middle aligned  right aligned column margin">
 			<div id="weather_container"></div>
 	    </div>
-	    <div class="middle aligned  left aligned column">
-	   		<label class="city-country"><b>${cityName}, </b>${country}</label><br>
-		    <label class="deg">${temp}</label><br>
+	    <div class="middle aligned  left aligned column margin">
+	   		<label class="city-country"><b>${cityName}, </b>${country}</label><br><br>
+		    <label class="deg">${temp} deg</label><br><br>
 		    <label class="currency"><b>Currency: </b>${currency}</label>
 	    </div>
-	  </div>
-	  <div class="row">
-	    <div class="column"></div>
-	    <div class="column"></div>
 	  </div>
 	</div>
 </body>

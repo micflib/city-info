@@ -23,7 +23,6 @@ public class ViewsController {
 		try {
 			this.setModel(Constant.DEFAULT_CITY, model);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return "error";
 		}
 		return "home";
@@ -35,7 +34,6 @@ public class ViewsController {
 		try {
 			this.setModel(cityName, model);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return "error";
 		}
 		return "home";
@@ -43,12 +41,10 @@ public class ViewsController {
 	
 	private void setModel(String cityName, Model model) throws Exception {
 		HashMap<String, String> cityMap = new HashMap<String, String>();
-		
 		cityMap = coyaService.getCityInformation(cityName);
 		model.addAttribute("cityName"	, cityMap.get("cityName"));
 		model.addAttribute("country"	, cityMap.get("country"));
 		model.addAttribute("currency"	, cityMap.get("currency"));
-		
 		cityMap = coyaService.getWeatherInformation(cityName);
 		model.addAttribute("weather"	, cityMap.get("weather"));
 		model.addAttribute("temp"		, cityMap.get("temp"));

@@ -21,7 +21,7 @@
 	  </div>
 	  <div class="row">
 	    <div class="middle aligned  left aligned column">
-		    <label class="deg">Oops... Something went wrong.</label><br>
+		    <label class="deg">Something went wrong.</label><br>
 		    <label class="currency">Please contact your administrator.</label>
 	    </div>
 	  </div>

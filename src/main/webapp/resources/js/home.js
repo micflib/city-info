@@ -8,22 +8,35 @@ $(document).ready(function(){
 var coya = {
 	determineWeather : function(wdata) {
 		var wstr = "";
-		
-		if(wdata.includes('rain')) {
-			wstr = '<svg><use xlink:href="#icon-cloud-rain"></use></svg>';
-		} else if(wdata.includes('wind')) {
-			wstr = '<svg><use xlink:href="#icon-cloud-wind"></use></svg>';
-		} else if(wdata.includes('fog')) {
-			wstr = '<svg><use xlink:href="#icon-cloud-fog"></use></svg>';
-		} else if(wdata.includes('lightning')) {
-			wstr = '<svg><use xlink:href="#icon-cloud-lightning"></use></svg>';
-		} else if(wdata.includes('raindrops')) {
-			wstr = '<svg><use xlink:href="#icon-cloud-raindrops"></use></svg>';
-		} else if(wdata.includes('snow')) {
-			wstr = '<svg><use xlink:href="#icon-cloud-snow"></use></svg>';
+		var icon = "";
+		if(wdata == "01d") {
+			icon = "sun";
+		} else if(wdata == "01n") {
+			icon = "moon-fill";
+		} else if(wdata == "02d") {
+			icon = "cloud-sun";
+		} else if(wdata == "02n") {
+			icon = "cloud-moon";
+		} else if(wdata == "03d" || wdata == "03n") {
+			icon = "cloud";
+		} else if(wdata == "04d" || wdata == "04n") {
+			icon = "clouds";
+		} else if(wdata == "09d" || wdata == "09n") {
+			icon = "cloud-raindrops";
+		} else if(wdata == "10d") {
+			icon = "cloud-sun-raindrops";
+		} else if(wdata == "10n") {
+			icon = "cloud-moon-raindrops";
+		} else if(wdata == "11d" || wdata == "11n") {
+			icon = "cloud-lightning";
+		} else if(wdata == "13d" || wdata == "13n") {
+			icon = "cloud-snowflakes";
+		} else if(wdata == "50d" || wdata == "50n") {
+			icon = "cloud-fog";
 		} else {
-			wstr = '<svg><use xlink:href="#icon-cloud"></use></svg>';
+			icon = "cloud";
 		}
+		wstr = '<svg><use xlink:href="#icon-'+icon+'"></use></svg>';
 		$('#weather_container').html(wstr);		
 	}
 };

@@ -1,10 +1,11 @@
 body {
 	font-family: Cabin;
 	background: #fcfcfc;
-	/* background-image: url("../img/berlin2.png"); */
+	background-image: url("../img/berlin-lansdcape2.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* background-color:#e8e8e8; */
+	background-position: center;
+    height: 600px;
 }
 
 body>.grid {
@@ -23,14 +24,69 @@ use {
 .city-country {
 	font-size: 28px;
     color: #878787;
+    float: left;
+    width: 10em;
+    margin-right: 1em;
 }
 
 .deg {
 	font-size: 33px;
     color: #00b38b;
+    float: left;
+    width: 10em;
+    margin-right: 1em;
 }
 
 .currency {
 	font-size: 24px;
     color: #878787;
+    float: left;
+    width: 10em;
+    margin-right: 1em;
+}
+
+.margin {
+	margin : -15px;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+  	background: url("../img/berlin-lansdcape2.svg") no-repeat right center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+  
+  .grid {
+  	align-items: baseline !important;
+  }
+  
+  .city-country {
+  	float: right;
+    margin-top: 30px;
+    margin-bottom: 235px;
+    margin-right: -60px;
+  }
+  
+  .deg {
+  	vertical-align: middle;
+	text-align: center;
+	float: unset !important;
+	align-items: center;
+	display: flex;
+	margin-left: 20px;
+  }
+  
+  .currency {
+  	vertical-align: middle;
+	text-align: center;
+	float: unset !important;
+	align-items: center;
+	display: flex;
+  }
+  
+  .margin {
+	margin : 0px !important;
+  }
 }
