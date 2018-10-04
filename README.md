@@ -40,15 +40,22 @@ You can find the assets under the folder assets and a version of the desktop and
 * Provide some notes about the challenge into **Impressions** section.
 * Use git to deliver your challenge `git bundle create $myName-coya-fs-challenge.git master`.
 
-### Extra point (none mandatory)
-
-We use docker (a lot!!) in our company,
-but we know that takes time create Dockerfiles and docker-compose.yml files,
-so if you have time please add some basic docker way to run your challenge.
-
 ## Instructions
 
-**TODO:** Add here your documentation.
+### To get the code:
+Clone the repository: 
+https://github.com/micflib/city-info.git
+
+###To run the application:
+From the command line with Maven:
+
+  $ cd spring-mvc-showcase
+  $ mvn jetty:run 
+
+  $ cd spring-mvc-showcase
+  $ mvn jetty:run 
+
+Access the deployed web application at: http://localhost:8080/spring-mvc-showcase/
 
 ## Impressions
 
