@@ -47,10 +47,10 @@ Clone the repository:
 https://github.com/micflib/city-info.git
 
 ### To run the application:
--------------------
 From the command line:
-$ cd {path}/coya
-$ mvn jetty:run
+    $ cd spring-mvc-showcase
+    $ mvn jetty:run 
+
 
 Access the deployed web application at: http://localhost:8080/coya/
 
