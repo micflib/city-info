@@ -4,8 +4,7 @@ This repository holds the full stack development challenge for applicants of COY
 
 ## The application
 
-We want to create a simple frontend + backend microservice,
-that display data from two external services:
+A simple frontend + backend microservice, that display data from two external services:
 
 * https://restcountries.eu/
 * https://openweathermap.org/api
@@ -24,22 +23,6 @@ that display data from two external services:
 * The city temperature
 * The city currency
 
-### UX design
-
-You can find the assets under the folder assets and a version of the desktop and mobile versions of the frontend.
-
-### Notes:
-
-* We estimate this challenge to be done around 5 hours.
-* You don't have any restriction about languages and methodologies.
-
-## The acceptance criteria
-
-* Follow the UX design and the user story.
-* Provide instructions under the **Instructions** section.
-* Provide some notes about the challenge into **Impressions** section.
-* Use git to deliver your challenge `git bundle create $myName-coya-fs-challenge.git master`.
-
 ## Instructions
 
 ### To get the code:
@@ -48,12 +31,23 @@ https://github.com/micflib/city-info.git
 
 ### To run the application:
 From the command line:
-    $ cd spring-mvc-showcase
-    $ mvn jetty:run 
-
+```
+$ cd {path}/coya
+$ mvn jetty:run 
+```
 
 Access the deployed web application at: http://localhost:8080/coya/
 
-## Impressions
+### Technology components
+* Java
+* Spring Framework
+* Javascript
+* JQuery
+* HTML, CSS
 
-**TODO:** Add here your impressions and notes.
+### API
+* http://localhost:8080/coya/
+* http://localhost:8080/coya/{cityName}
+
+## Impressions
+My first impression of the challenge is it is simple since the complexity of the task is not that hard. 
