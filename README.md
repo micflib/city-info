@@ -50,4 +50,8 @@ Access the deployed web application at: http://localhost:8080/coya/
 * http://localhost:8080/coya/{cityName}
 
 ## Impressions
-My first impression of the challenge is it is simple since the complexity of the task is not that hard. 
+* My first impression of the challenge is it is simple since the complexity of the task is not that hard. 
+* Since I was given the freedom to choose the technologies, it gave me an extra amount of confidence to finish the task. 
+* There were some challenges along the way, but I was able to provide the solution. Thanks to the internet.
+* I want to implement some functions and features (animation, backend optimization, docker) but I don't have enough time.
+* Some of specification, material were not given/ complete but I already expected it to happen. It is a normal scenario that not all specification are given.
