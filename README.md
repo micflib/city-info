@@ -1,6 +1,6 @@
-# Coya full stack challenge
+# full stack challenge
 
-This repository holds the full stack development challenge for applicants of COYA.
+This repository holds the full stack development.
 
 ## The application
 
