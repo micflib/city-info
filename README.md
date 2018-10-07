@@ -1,7 +1,3 @@
-# Coya full stack challenge
-
-This repository holds the full stack development challenge for applicants of COYA.
-
 ## The application
 
 We want to create a simple frontend + backend microservice,
